@@ -10,6 +10,8 @@
     margin: 20px auto;
 }
 
+/*--------------- BUTTONS ---------------*/
+
 #game-state {
     font-size: 18px;
     font-weight: bold;
@@ -22,7 +24,87 @@
     padding: 20px;
     width: 80%;
     margin: 20px auto;
+
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
 }
+
+#deal-button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition-duration: 0.2s;
+    transition-property: box-shadow, transform;
+}
+
+#deal-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+#deal-button:active {
+    background-color: #45a049;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#hit-button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition-duration: 0.2s;
+    transition-property: box-shadow, transform;
+}
+
+#hit-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+#hit-button:active {
+    background-color: #45a049;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#stand-button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition-duration: 0.2s;
+    transition-property: box-shadow, transform;
+}
+
+#stand-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+#stand-button:active {
+    background-color: #45a049;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/*--------------- ^ BUTTONS ^ ---------------*/
 
 .hand {
     display: flex;
@@ -62,10 +144,11 @@
 #player-balance {
     text-align: center;
     float:right;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     font-size: 18px;
     font-weight: bold;
     color: #333;
+
 }
 
 #player-balance p {
@@ -75,3 +158,14 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+#wager-input {
+    font-size: 2rem;
+    width: 10%;
+    font-weight: bold;
+}
+
+#wager-p {
+    font-size: 1.5rem;
+}
+

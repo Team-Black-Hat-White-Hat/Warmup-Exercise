@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playing Card Widget</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id ="game-board">
@@ -20,12 +23,12 @@
         </div>
     </div>
     <div id="game-state">
-        <button id="deal-button">Deal!</button>
-        <button id="hit-button">Hit</button>
-        <button id="stand-button">Stand</button><p>Wager:</p>
-        <input type="number" id="wager-input" value="0" min="0" step="1">
+        <button id="deal-button"><i class="fa-solid fa-address-card"></i> Deal!</button>
+        <button id="hit-button"><i class="fa-solid fa-hand"></i> Hit</button>
+        <button id="stand-button"><i class="fa-solid fa-briefcase"></i> Stand</button>
+        <p id="wager-p">Wager:</p><i class="fa-solid fa-dollar-sign"></i><input type="number" id="wager-input" value="0" min="0" step="1">
         <div id="player-balance">
-            <p>Balance: <span id="balance-amount">$100</span></p>
+            <p><i class="fa-solid fa-wallet"></i> Balance: <span id="balance-amount">$100</span></p>
         </div>
     </div>
     <script type="module" src="GameManager.js"></script>
