@@ -23,19 +23,44 @@
     gap: 20px;
     padding: 20px;
     width: 80%;
-    margin: 20px auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
 
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #e0e0e0;
 }
 
+#game-state-2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    font-size: 2rem;
+}
+
+/*-----DEAL BUTTON-----*/
 #deal-button {
     font-size: 20px;
     font-weight: bold;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
-    border: none;
+    border: solid 2px black;
     border-radius: 5px;
     cursor: pointer;
 
@@ -54,13 +79,15 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+/*------HIT BUTTON-----*/
+
 #hit-button {
     font-size: 20px;
     font-weight: bold;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
-    border: none;
+    border: solid 2px black;
     border-radius: 5px;
     cursor: pointer;
 
@@ -79,13 +106,15 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
+/*-----STAND BUTTON-----*/
+
 #stand-button {
     font-size: 20px;
     font-weight: bold;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
-    border: none;
+    border: solid 2px black;
     border-radius: 5px;
     cursor: pointer;
 
@@ -141,31 +170,47 @@
     transform-style: preserve-3d;
 }
 
+/*---------------- WAGES AND BALANCE ---------------*/
 #player-balance {
-    text-align: center;
     float:right;
     /*margin-top: 20px;*/
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: bold;
     color: #333;
+    width: 15%;
 
 }
 
 #player-balance p {
     margin: 0;
-    padding: 10px;
+    padding: 5px;
     background-color: #f9f9f9;
-    border: 1px solid #ccc;
+    border: 2px solid black;
     border-radius: 5px;
+    color: black;
 }
 
 #wager-input {
+    margin-left: -21px;
+    border-radius: 0px 5px 5px 0px;
+    border-left: 0;
+    border-color: black;
     font-size: 2rem;
-    width: 10%;
+    width: 7%;
     font-weight: bold;
+    outline: 0;
 }
 
-#wager-p {
-    font-size: 1.5rem;
+#wager-dollar {
+    font-size: 2rem;
+    background-color: white;
+    border: solid;
+    border-width: 2px 0px 2px 2px;
+    border-radius: 5px 0px 0px 5px;
+    border-right: 0;
+    padding: 1px 0px 1px 1px;
 }
+
+/*---------------- ^ WAGES AND BALANCE ^ ---------------*/
+
 
